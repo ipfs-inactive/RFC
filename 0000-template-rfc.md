@@ -1,7 +1,10 @@
 - Feature Name: (fill me in with a unique ident, my_awesome_feature)
 - Start Date: (fill me in with today's date, YYYY-MM-DD)
+- Current Status: (DRAFT -> REVIEW -> ACCEPTED) _The status is described in the [Readme](README.md#the-rfc-life-cycle)._
+- Owner: (your name and github handle)
 - RFC PR: (leave this empty)
 - IPFS Issue: (leave this empty)
+
 
 # Summary
 [summary]: #summary
@@ -24,7 +27,7 @@ Explain the proposal as if it was already included in the language and you were 
 - If applicable, provide sample error messages, deprecation warnings, or migration guidance.
 - If applicable, describe the differences between teaching this to existing contributors and new contributors.
 
-For implementation-oriented RFCs (e.g. for compiler internals), this section should focus on how compiler contributors should think about the change, and give examples of its concrete impact. For policy RFCs, this section should provide an example-driven introduction to the policy, and explain its impact in concrete terms.
+For implementation-oriented RFCs (e.g. for changes to a protocol or its implementations), this section should focus on how protocol contributors should think about the change, and give examples of its concrete impact. For policy RFCs, this section should provide an example-driven introduction to the policy, and explain its impact in concrete terms.
 
 # Reference-level explanation
 [reference-level-explanation]: #reference-level-explanation
@@ -42,12 +45,13 @@ The section should return to the examples given in the previous section, and exp
 
 Why should we *not* do this?
 
-# Rationale and alternatives
+# Rationale, Prior Discussion and alternatives
 [alternatives]: #alternatives
 
 - Why is this design the best in the space of possible designs?
 - What other designs have been considered and what is the rationale for not choosing them?
 - What is the impact of not doing this?
+- What prior discussions have occurred that led to this RFC (include links where possible)
 
 # Unresolved questions
 [unresolved]: #unresolved-questions

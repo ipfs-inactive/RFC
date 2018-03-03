@@ -4,11 +4,10 @@ IPFS RFCs
 ## Table of Contents
 [Table of Contents]: #table-of-contents
 
-  - [Opening](#rust-rfcs)
+  - [Opening](#ipfs-rfcs)
   - [Table of Contents]
   - [When you need to follow this process]
   - [Before creating an RFC]
-  - [What the process is]
   - [The RFC life-cycle]
   - [Reviewing RFCs]
   - [Implementing an RFC]
@@ -45,7 +44,7 @@ the RFC process, it may be closed with a polite request to submit an RFC first.
 ### working group specific guidelines
 [working group specific guidelines]: #working group-specific-guidelines
 
-As working groups take form, they will have the perogative to add further guidelines regarding RFCs that apply to their domain of work.
+As working groups take form, they will have the prerogative to add further guidelines regarding RFCs that apply to their domain of work.
 
 ## Before creating an RFC
 [Before creating an RFC]: #before-creating-an-rfc
@@ -71,12 +70,25 @@ developers, and particularly members of the relevant [working group] is a good
 indication that the RFC is worth pursuing.
 
 
-## What the process is
-[What the process is]: #what-the-process-is
+## The RFC life-cycle
+[The RFC life-cycle]: #the-rfc-life-cycle
 
-In short, to get a major feature added to Rust, one must first get the RFC
+In short, to get a major feature added to IPFS, one must first get the RFC
 merged into the RFC repository as a markdown file. At that point the RFC is
-"active" and may be implemented with the goal of eventual inclusion into the corresponding protocols or libraries.
+"Accepted" and may be implemented with the goal of eventual inclusion into the corresponding protocols or libraries.
+
+As it grows from an idea to shipping in a supported release, an SDK RFC will traverse along:
+
+1. **Draft**: The owner of the SDK RFC has started to draft up how the subject will be handled and may be reviewing with a core group.  Comments are certainly welcome at this stage even though the owner hasn't worked through enough details to ask for...
+2. **Review**: This SDK RFC is in a review period. Stakeholders and the owner may still be iterating on some final details before signoff. A minimum review period has been defined.
+3. **Final Call**
+4. **Accepted**: All stakeholders have signed off and this SDK RFC is now or will be implemented soon.
+
+
+### Status: Draft
+
+When you've done the preparation described in [Before creating an RFC] and are ready to submit your RFC, create the pull request following these steps:
+
 
   - Fork the RFC repo [RFC repository]
   - Copy `0000-template-rfc.md` to `rfcs/0000-my-feature.md` (where "my-feature" is
@@ -88,9 +100,15 @@ merged into the RFC repository as a markdown file. At that point the RFC is
   - Submit a pull request. As a pull request the RFC will receive design
     feedback from the larger community, and the author should be prepared to
     revise it in response.
+
+### Status: Review
+
+Once a an RFC has been submitted, it's ready for Review.
+
   - Each pull request will be labeled with the most relevant [working group], which
     will lead to its being triaged by that team in a future meeting and assigned
     to a member of the working group.
+  - At this point, the status in the RFC markdown document should be marked "Review"
   - Build consensus and integrate feedback. RFCs that have broad support are
     much more likely to make progress than those that don't receive any
     comments. Feel free to reach out to the RFC assignee in particular to get
@@ -104,43 +122,46 @@ merged into the RFC repository as a markdown file. At that point the RFC is
     request, and leave a comment on the pull request explaining your changes.
     Specifically, do not squash or rebase commits after they are visible on the
     pull request.
-  - At some point, a member of the working group will propose a "motion for final
-    comment period" (FCP), along with a *disposition* for the RFC (merge, close,
+
+### Status: Final Call (FCP)
+
+At some point, a member of the working group will propose a motion for _"final
+comment period"_ (FCP), along with a *disposition* for the RFC (merge, close,
     or postpone).
-    - This step is taken when enough of the tradeoffs have been discussed that
-    the working group is in a position to make a decision. That does not require
-    consensus amongst all participants in the RFC thread (which is usually
-    impossible). However, the argument supporting the disposition on the RFC
-    needs to have already been clearly articulated, and there should not be a
-    strong consensus *against* that position outside of the working group. Working group
-    members use their best judgment in taking this step, and the FCP itself
-    ensures there is ample time and notification for stakeholders to push back
-    if it is made prematurely.
-    - For RFCs with lengthy discussion, the motion to FCP is usually preceded by
-      a *summary comment* trying to lay out the current state of the discussion
-      and major tradeoffs/points of disagreement.
-    - Before actually entering FCP, *all* members of the working group must sign off;
-    this is often the point at which many working group members first review the RFC
-    in full depth.
-  - The FCP lasts ten calendar days, so that it is open for at least 5 business
-    days. It is also advertised widely,
-    e.g. in [This Week in Rust](https://this-week-in-rust.org/). This way all
-    stakeholders have a chance to lodge any final objections before a decision
-    is reached.
-  - In most cases, the FCP period is quiet, and the RFC is either merged or
-    closed. However, sometimes substantial new arguments or ideas are raised,
-    the FCP is canceled, and the RFC goes back into development mode.
 
-## The RFC life-cycle
-[The RFC life-cycle]: #the-rfc-life-cycle
+  - This step is taken when enough of the tradeoffs have been discussed that
+  the working group is in a position to make a decision. That does not require
+  consensus amongst all participants in the RFC thread (which is usually
+  impossible). However, the argument supporting the disposition on the RFC
+  needs to have already been clearly articulated, and there should not be a
+  strong consensus *against* that position outside of the working group. Working group
+  members use their best judgment in taking this step, and the FCP itself
+  ensures there is ample time and notification for stakeholders to push back
+  if it is made prematurely.
+  - For RFCs with lengthy discussion, the motion to FCP is usually preceded by
+    a *summary comment* trying to lay out the current state of the discussion
+    and major tradeoffs/points of disagreement.
+  - Before actually entering FCP, *all* members of the working group must sign off;
+  this is often the point at which many working group members first review the RFC
+  in full depth.
+- The FCP lasts ten calendar days, so that it is open for at least 5 business
+  days. It is also advertised widely,
+  e.g. in the [Weekly IPFS All Hands Call](https://github.com/ipfs/pm/#weekly-all-hands). This way all
+  stakeholders have a chance to lodge any final objections before a decision
+  is reached.
+- In most cases, the FCP period is quiet, and the RFC is either merged or
+  closed. However, sometimes substantial new arguments or ideas are raised,
+  the FCP is canceled, and the RFC goes back into development mode.
 
-Once an RFC becomes "active" then authors may implement it and submit the
-feature as a pull request to the corresponding repo. Being "active" is not a rubber
+### Status: Accepted    
+
+Once an RFC becomes "Accepted" then authors may implement it and submit the
+feature as a pull request to the corresponding repo. Being "Accepted" is not a rubber
 stamp, and in particular still does not mean the feature will ultimately be
 merged; it does mean that in principle all the major stakeholders have agreed
 to the feature and are amenable to merging it.
 
-Furthermore, the fact that a given RFC has been accepted and is "active"
+Furthermore, the fact that a given RFC has been accepted and is "Accepted"
 implies nothing about what priority is assigned to its implementation, nor does
 it imply anything about whether an IPFS developer has been assigned the task of
 implementing the feature. While it is not *necessary* that the author of the
@@ -148,7 +169,9 @@ RFC also write the implementation, it is by far the most effective way to see
 an RFC through to completion: authors should not expect that other project
 developers will take on responsibility for implementing their accepted feature.
 
-Modifications to "active" RFCs can be done in follow-up pull requests. We
+### Modifications to Accepted RFCs
+
+Modifications to "Accepted" RFCs can be done in follow-up pull requests. We
 strive to write each RFC in a manner that it will reflect the final design of
 the feature; but the nature of the process means that we cannot expect every
 merged RFC to actually reflect what the end result will be at the time of the
@@ -157,9 +180,9 @@ next major release.
 In general, once accepted, RFCs should not be substantially changed. Only very
 minor changes should be submitted as amendments. More substantial changes
 should be new RFCs, with a note added to the original RFC. Exactly what counts
-as a "very minor change" is up to the working group to decide; check
-[working group specific guidelines] for more details.
+as a "very minor change" is up to the working group to decide.
 
+_If_ you make changes to an RFC after it's been accepted, add a note in the header of the RFC with a very short summary of the change and links to any relevant discussions. This way the change is very explicit and hard to miss.
 
 ## Reviewing RFCs
 [Reviewing RFCs]: #reviewing-rfcs
@@ -183,7 +206,7 @@ rationale for the decision.
 Some accepted RFCs represent vital features that need to be implemented right
 away. Other accepted RFCs can represent features that can wait until some
 arbitrary developer feels like doing the work. Every accepted RFC has an
-associated issue tracking its implementation in the Rust repository; thus that
+associated issue tracking its implementation in the IPFS repository; thus that
 associated issue can be assigned a priority via the triage process that the
 teams use for all issues in the IPFS repositories.
 
@@ -191,7 +214,7 @@ The author of an RFC is not obligated to implement it. Of course, the RFC
 author (like any other developer) is welcome to post an implementation for
 review after the RFC has been accepted.
 
-If you are interested in working on the implementation for an "active" RFC, but
+If you are interested in working on the implementation for an "Accepted" RFC, but
 cannot determine if someone else is already working on it, feel free to ask
 (e.g. by leaving a comment on the associated issue).
 
@@ -203,8 +226,7 @@ Some RFC pull requests are tagged with the "postponed" label when they are
 closed (as part of the rejection process). An RFC closed with "postponed" is
 marked as such because we want neither to think about evaluating the proposal
 nor about implementing the described feature until some time in the future, and
-we believe that we can afford to wait until then to do so. Historically,
-"postponed" was used to postpone features until after 1.0. Postponed pull
+we believe that we can afford to wait until then to do so. Postponed pull
 requests may be re-opened when the time is right. We don't have any formal
 process for that, you should ask members of the relevant working group.
 
