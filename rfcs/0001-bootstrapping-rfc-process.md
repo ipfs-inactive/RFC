@@ -43,7 +43,7 @@ Why should we *not* do this?
 [alternatives]: #alternatives
 
 - It's time to establish a clear, reliable process for proposing changes and tracking the decisions we've made. If done right, this will do a lot to reduce confusion, encourage participation, and encourage a high level of transparency around important decisions that impact the project.
-- Rather than starting from scratch, we're starting with the process that is being used, successfully, by a project we admire -- the IPFS language
+- Rather than starting from scratch, we're starting with the process that is being used, successfully, by a project we admire -- the Rust language
 - The process described here is sufficiently minimal that we can implement it without much confusion and will be able to modify/improve it over time
 - This process is generic enough that we can fork it and repeat on spinoff projects like libp2p, IPLD, etc
 
