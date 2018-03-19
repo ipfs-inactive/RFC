@@ -6,21 +6,21 @@
 # Summary
 [summary]: #summary
 
-Begin using an RFC process. Initially use a structure similar to the process used by the maintainers of IPFS lang, as described in https://github.com/IPFS-lang/rfcs
+Begin using an RFC process. Initially use a structure similar to the process used by the maintainers of Rust lang, as described in https://github.com/rust-lang/rfcs
 
 # Motivation
 [motivation]: #motivation
 
 Establish a clear, repeatable process for people to propose ideas and make decisions in a way that
 1. Allows everyone to see what decisions have been made and how they were made
-2. Allows everyone to see what proposals have been proposed and comment on them or ssuggest changes
+2. Allows everyone to see what proposals have been proposed and comment on them or suggest changes
 3. Works for a globally distributed group of contributors to discuss and make decisions asynchronously
 4. Can be replicated/repeated in sibling projects or spinoff projects like libp2p, IPLD, etc.
 
 # Guide-level explanation
 [guide-level-explanation]: #guide-level-explanation
 
-_[Cribbed directly from [IPFS-lang/rfcs README](https://github.com/IPFS-lang/rfcs#IPFS-rfcs)]_
+_[Cribbed directly from [Rust-lang/rfcs README](https://github.com/rust-lang/rfcs#rust-rfcs)]_
 Many changes, including bug fixes and documentation improvements can be implemented and reviewed via the normal GitHub pull request workflow.
 
 Some changes though are "substantial", and we ask that these be put through a bit of a design process and produce a consensus among the IPFS community and the sub-teams.
@@ -30,7 +30,7 @@ The "RFC" (request for comments) process is intended to provide a consistent and
 # Reference-level explanation
 [reference-level-explanation]: #reference-level-explanation
 
-The proposed RFC process is described in the [README](../README.md). It's a modified version of  the process used in the [IPFS lang RFCs repository](https://github.com/IPFS-lang/rfcs/blob/752a02115e49c114e2d6b5247c410da69aac505c/README.md), which is dual-licensed under MIT and Apache2 licenses.
+The proposed RFC process is described in the [README](../README.md). It's a modified version of  the process used in the [Rust lang RFCs repository](https://github.com/rust-lang/rfcs/blob/752a02115e49c114e2d6b5247c410da69aac505c/README.md), which is dual-licensed under MIT and Apache2 licenses.
 
 Go to [README.md](../README.md) to review and comment on the details of the proposed process. _[Note: when this RFC is merged, we should update this link to point to the README.md in the specific commit that got merged.]_
 
