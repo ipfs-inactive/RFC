@@ -25,7 +25,11 @@ This RFC describes a structure that's designed to provide clarity and direction 
 
 Over the past 3 years we have experimented with a variety of team sizes and levels of coordination across teams. We find that contributors are most effective, and happiest, when they get to be on small teams (3-5 full time people). When the teams get bigger than this, the work becomes unfocused, communication becomes harder, and management overhead skyrockets. When teams are too small, especially when there is only one full time person on a "team", they easily become overloaded with responsibilities and, due to the globally distributed nature of our community, they become isolated.  
 
-This RFC includes constraints on the size, formation, and sub-division of teams. Those constraints are aimed at encouraging people to work in small teams while maintaining regular communication with other related teams and groups.   
+This RFC includes constraints on the size, formation, and sub-division of teams. Those constraints are aimed at encouraging people to work in small teams while maintaining regular communication with other related teams and groups. 
+
+## Self-organizing ways for People to Coordinate Across Teams
+
+When multiple teams have a shared focus or shred need, they can form a Working Group to convene conversations and align work around those focuses or needs.
 
 ## Welcoming Entry Points and Clear Funnels for Engagement
 
@@ -37,10 +41,10 @@ Another important goal of these changes is to create welcoming entry points for 
 The IPFS Project  is governed by a collection of _Teams_ and _Working Groups (WGs)_. These Teams and Working Groups are appointed to research, develop and deploy work under their declared scope/focus.
 
 We distinguish between _Teams_ and _Working Groups_.
-- _Teams_ work on products or services with discrete users, use cases, functionality and release roadmaps.
-- _Working Groups_ tackle ongoing, cross-cutting concerns like security, benchmarking, internationalization or community engagement.
+- _Teams_ are small groups who work on products (go-ipfs, ipfs-cluster, ipfs-companion) or services (public gateways, testing infrastructure, etc). They have discrete users, use cases, functionality and release roadmaps. A Team must have at least 3 people whose Full Time efforts are primarily focused on that Team's work, and they should avoid getting bigger than 8-10 people
+- _Working Groups_ tackle ongoing, cross-cutting concerns. Some Working Groups focus on shared needs like security, benchmarking or community engagement. Others focus on shared goals and priorities like Enabling Development of Decentralized Applications, or Supporting Decentralized Data Stewardship. Working Groups do not have a size limit, and don't always have people focused full-time on that group's work.
 
-It's common for a person to belong to a single team and multiple Working Groups. While most of their work revolves around a single Team, the Working Groups allow them to be in conversation with many people from many teams about cross-cutting concerns.  Teams are relatively focused with a small range of direct collaborators while Working Groups are cross-team and cross-functional with a larger range of collaborators.
+It's common for a person to belong to a single team and multiple Working Groups. Teams are relatively focused with a small range of direct collaborators while Working Groups are cross-team and cross-functional with a larger range of collaborators.  While most of their work revolves around a single Team, the Working Groups allow them to be in conversation with many people from many teams about cross-cutting concerns.  
 
 We want Teams and Working Groups to emerge, function, and dissolve in response to community needs. To accommodate this, Teams and Working Groups are created using the RFC process -- people who want to form a Team or Working Group must propose it in an RFC and get that RFC merged.  That open-ended invitation to create Teams and Working Groups is matched by clear protocols describing when and how working groups should be dissolved.
 
@@ -51,7 +55,7 @@ Each Team or Working Group is able to set its own pace and objectives quarterly.
 
 ## Product/Service Teams and Working Groups
 
-### Product/Service Teams
+### Teams (Product Teams and Service Teams)
 
 Some Teams focus on producing and maintaining _products_ (ie. go-ipfs, ipfs-cluster, etc.) while other Teams focus on providing _services_ for their audiences to rely on (ie. Infrastructure). The rules and guidelines here apply equally to both Product Teams and Services Teams,
 
