@@ -69,6 +69,9 @@ As a rule of thumb, receiving encouraging feedback from long-standing project
 developers, and particularly members of the relevant [working group] is a good
 indication that the RFC is worth pursuing.
 
+A note about key words:
+In an effort to avoid ambiguity, and to make RFCs easier for non-native english speakers to interpret, use the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and  "OPTIONAL" in your RFCs according to the guidelines in [IETF RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)
+
 
 ## The RFC life-cycle
 [The RFC life-cycle]: #the-rfc-life-cycle
