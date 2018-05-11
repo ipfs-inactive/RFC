@@ -1,7 +1,10 @@
 - Feature Name: bootstrapping-rfc-process
 - Start Date: 09 February 2018
+- Current Status: REVIEW
+- Owner: Matt Zumwalt @flyingzumwalt
 - RFC PR: (leave this empty)
 - IPFS Issue: (leave this empty)
+
 
 # Summary
 [summary]: #summary
@@ -25,7 +28,7 @@ Many changes, including bug fixes and documentation improvements can be implemen
 
 Some changes though are "substantial", and we ask that these be put through a bit of a design process and produce a consensus among the IPFS community and the sub-teams.
 
-The "RFC" (request for comments) process is intended to provide a consistent and controlled path for new features to enter the language and standard libraries, so that all stakeholders can be confident about the direction the language is evolving in.
+The "RFC" (request for comments) process is intended to provide a consistent and controlled path for new features to enter the protocol and standard libraries, so that all stakeholders can be confident about the direction the protocol is evolving in.
 
 # Reference-level explanation
 [reference-level-explanation]: #reference-level-explanation
@@ -37,7 +40,13 @@ Go to [README.md](../README.md) to review and comment on the details of the prop
 # Drawbacks
 [drawbacks]: #drawbacks
 
-Why should we *not* do this?
+Some possible drawbacks:
+
+- Introducing too much of process, leading to developers not approaching the project in fear of too process-heavy
+- It can be hard to reach consensus on some broad changes, without having **one** person being the decision maker
+- Decisions can be made implicitly without going through the RFC process, and this repository still won't be the source of truth for design decisions
+- Yet another repository on the IPFS Github to manage and participate in
+- Not being a formal enough process to be valuable
 
 # Rationale and alternatives
 [alternatives]: #alternatives

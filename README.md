@@ -42,7 +42,7 @@ the RFC process, it may be closed with a polite request to submit an RFC first.
 
 
 ### working group specific guidelines
-[working group specific guidelines]: #working group-specific-guidelines
+[working group specific guidelines]: #working-group-specific-guidelines
 
 As working groups take form, they will have the prerogative to add further guidelines regarding RFCs that apply to their domain of work.
 
@@ -61,9 +61,9 @@ beforehand, to ascertain that the RFC may be desirable; having a consistent
 impact on the project requires concerted effort toward consensus-building.
 
 The most common preparations for writing and submitting an RFC include talking
-the idea over on the #ipfs irc channel, filing and discussing ideas on the
+the idea over on the #ipfs, #ipfs-dev and #libp2p irc channels, filing and discussing ideas on the
 [RFC issue tracker], and occasionally posting "pre-RFCs" on the
-[ipfs discussion forum](https://discuss.ipfs.io) for early review.
+[ipfs discussion forum](https://discuss.ipfs.io/t/rfcs-and-pre-rfcs) for early review.
 
 As a rule of thumb, receiving encouraging feedback from long-standing project
 developers, and particularly members of the relevant [working group] is a good
@@ -77,12 +77,12 @@ In short, to get a major feature added to IPFS, one must first get the RFC
 merged into the RFC repository as a markdown file. At that point the RFC is
 "Accepted" and may be implemented with the goal of eventual inclusion into the corresponding protocols or libraries.
 
-As it grows from an idea to shipping in a supported release, an SDK RFC will traverse along:
+As it grows from an idea to shipping in a supported release, an RFC will traverse along:
 
-1. **Draft**: The owner of the SDK RFC has started to draft up how the subject will be handled and may be reviewing with a core group.  Comments are certainly welcome at this stage even though the owner hasn't worked through enough details to ask for...
-2. **Review**: This SDK RFC is in a review period. Stakeholders and the owner may still be iterating on some final details before signoff. A minimum review period has been defined.
-3. **Final Call**
-4. **Accepted**: All stakeholders have signed off and this SDK RFC is now or will be implemented soon.
+1. **Draft**: The owner of the RFC has started to draft up how the subject will be handled and may be reviewing with the relevant working group.  Comments are certainly welcome at this stage even though the owner hasn't worked through enough details to ask for...
+2. **Review**: This RFC is in a review period. Stakeholders and the owner may still be iterating on some final details before signoff.
+3. **Final Call (FCP)**: 10-day Final Comment Period before an RFC is merged, closed or postponed.
+4. **Accepted**: All stakeholders have signed off and this RFC is now or will be implemented soon.
 
 
 ### Status: Draft
@@ -98,8 +98,7 @@ When you've done the preparation described in [Before creating an RFC] and are r
     design, or are disingenuous about the drawbacks or alternatives tend to be
     poorly-received.
   - Submit a pull request. As a pull request the RFC will receive design
-    feedback from the larger community, and the author should be prepared to
-    revise it in response.
+    feedback from the larger community, and the author should be prepared to respond to feedback and possibly revise the proposal.
 
 ### Status: Review
 
@@ -114,7 +113,7 @@ Once a an RFC has been submitted, it's ready for Review.
     comments. Feel free to reach out to the RFC assignee in particular to get
     help identifying stakeholders and obstacles.
   - The working group will discuss the RFC pull request, as much as possible in the
-    comment thread of the pull request itself. Offline discussion will be
+    comment thread of the pull request itself. Offline discussion must be
     summarized on the pull request comment thread.
   - RFCs rarely go through this process unchanged, especially as alternatives
     and drawbacks are shown. You can make edits, big and small, to the RFC to
@@ -151,12 +150,11 @@ comment period"_ (FCP), along with a *disposition* for the RFC (merge, close,
   is reached.
 - In most cases, the FCP period is quiet, and the RFC is either merged or
   closed. However, sometimes substantial new arguments or ideas are raised,
-  the FCP is canceled, and the RFC goes back into development mode.
+  the FCP is canceled, and the RFC goes back into the "Review" stage.
 
 ### Status: Accepted    
 
-Once an RFC becomes "Accepted" then authors may implement it and submit the
-feature as a pull request to the corresponding repo. Being "Accepted" is not a rubber
+Once an RFC becomes "Accepted" then authors may implement it and ©. Being "Accepted" is not a rubber
 stamp, and in particular still does not mean the feature will ultimately be
 merged; it does mean that in principle all the major stakeholders have agreed
 to the feature and are amenable to merging it.
@@ -190,7 +188,7 @@ _If_ you make changes to an RFC after it's been accepted, add a note in the head
 While the RFC pull request is up, the working group may schedule meetings with the
 author and/or relevant stakeholders to discuss the issues in greater detail,
 and in some cases the topic may be discussed at a working group meeting. In either
-case a summary from the meeting will be posted back to the RFC pull request.
+case a summary from the meeting must be posted back to the RFC pull request.
 
 A working group makes final decisions about RFCs after the benefits and drawbacks
 are well understood. These decisions can be made at any time, but the working group
@@ -206,7 +204,7 @@ rationale for the decision.
 Some accepted RFCs represent vital features that need to be implemented right
 away. Other accepted RFCs can represent features that can wait until some
 arbitrary developer feels like doing the work. Every accepted RFC has an
-associated issue tracking its implementation in the IPFS repository; thus that
+associated issue tracking its implementation in the corresponding IPFS repository; thus that
 associated issue can be assigned a priority via the triage process that the
 teams use for all issues in the IPFS repositories.
 
