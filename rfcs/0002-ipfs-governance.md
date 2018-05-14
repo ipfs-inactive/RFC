@@ -23,9 +23,9 @@ This RFC describes a structure that's designed to provide clarity and direction 
 
 ## Small Teams, but no Lonely Hackers
 
-Over the past 3 years we have experimented with a variety of team sizes and levels of coordination across teams. We find that contributors are most effective, and happiest, when they get to be on small teams (3-5 full time people). When the teams get bigger than this, the work becomes unfocused, communication becomes harder, and management overhead skyrockets. When teams are too small, especially when there is only one full time person on a "team", they easily become overloaded with responsibilities and, due to the globally distributed nature of our community, they become isolated.  
+Over the past 3 years we have experimented with a variety of team sizes and levels of coordination across teams. We find that contributors are most effective, and happiest, when they get to be on small teams (2-5 full time people). When the teams get bigger than this, the work becomes unfocused, communication becomes harder, and management overhead skyrockets. When teams are too small, especially when there is only one full time person on a "team", they easily become overloaded with responsibilities and, due to the globally distributed nature of our community, they become isolated.  
 
-This RFC includes constraints on the size, formation, and sub-division of teams. Those constraints are aimed at encouraging people to work in small teams while maintaining regular communication with other related teams and groups. 
+This RFC includes constraints on the size, formation, and sub-division of teams. Those constraints are aimed at encouraging people to work in small teams while maintaining regular communication with other related teams and groups.
 
 ## Self-organizing ways for People to Coordinate Across Teams
 
@@ -41,7 +41,7 @@ Another important goal of these changes is to create welcoming entry points for 
 The IPFS Project  is governed by a collection of _Teams_ and _Working Groups (WGs)_. These Teams and Working Groups are appointed to research, develop and deploy work under their declared scope/focus.
 
 We distinguish between _Teams_ and _Working Groups_.
-- _Teams_ are small groups who work on products (go-ipfs, ipfs-cluster, ipfs-companion) or services (public gateways, testing infrastructure, etc). They have discrete users, use cases, functionality and release roadmaps. A Team must have at least 3 people whose Full Time efforts are primarily focused on that Team's work, and they should avoid getting bigger than 8-10 people
+- _Teams_ are small groups who work on products (go-ipfs, ipfs-cluster, ipfs-companion) or services (public gateways, testing infrastructure, etc). They have discrete users, use cases, functionality and release roadmaps. A Team must have at least 2 people (preferably 3 people) whose Full Time efforts are primarily focused on that Team's work, and they should avoid getting bigger than 8-10 people
 - _Working Groups_ tackle ongoing, cross-cutting concerns. Some Working Groups focus on shared needs like security, benchmarking or community engagement. Others focus on shared goals and priorities like Enabling Development of Decentralized Applications, or Supporting Decentralized Data Stewardship. Working Groups do not have a size limit, and don't always have people focused full-time on that group's work.
 
 It's common for a person to belong to a single team and multiple Working Groups. Teams are relatively focused with a small range of direct collaborators while Working Groups are cross-team and cross-functional with a larger range of collaborators.  While most of their work revolves around a single Team, the Working Groups allow them to be in conversation with many people from many teams about cross-cutting concerns.  
@@ -59,11 +59,11 @@ Each Team or Working Group is able to set its own pace and objectives quarterly.
 
 Some Teams focus on producing and maintaining _products_ (ie. go-ipfs, ipfs-cluster, etc.) while other Teams focus on providing _services_ for their audiences to rely on (ie. Infrastructure). The rules and guidelines here apply equally to both Product Teams and Services Teams,
 
-- A Team must have at least 3 people whose Full Time efforts are primarily focused on that Team's work.
+- A Team must have at least 2 people whose Full Time efforts are primarily focused on that Team's work.
 - Teams define  [Objectives and Key Results](https://weekdone.com/resources/objectives-key-results) (OKRs) every quarter. Members of a Team primarily derive their tasks from those OKRs.
 - Some Teams have multiple products or services under their view. Others are focused on a single product or service. Teams can also _add_ products and services to their portfolio at any time.
-- **Teams should subdivide when the Team gets bigger than 3-5 Full Time people** so that the group has a manageable amount of OKRs. When a  Team becomes big enough to subdivide and specialize, they can split into sub-teams. In that case, those sub-teams can create their own OKRs but they must coordinate with each other to create shared, overarching OKRs and Roadmaps. This allows external audiences to follow the work of the overall Team without having to read every sub-team's OKRs.
-- People _can_ belong to multiple Teams, but should avoid over committing. **People whose time is split across teams do not count toward either Team's 3-person minimum.**
+- **Teams should subdivide when the Team gets bigger than 2-5 Full Time people** so that the group has a manageable amount of OKRs. When a  Team becomes big enough to subdivide and specialize, they can split into sub-teams. In that case, those sub-teams can create their own OKRs but they must coordinate with each other to create shared, overarching OKRs and Roadmaps. This allows external audiences to follow the work of the overall Team without having to read every sub-team's OKRs.
+- People _can_ belong to multiple Teams, but should avoid over committing. **People whose time is split across teams do not count toward either Team's 2-person minimum.**
 - Captains (team leads) are responsible for keeping track of whether people are over committed (including keeping track of whether people have overcommitted across multiple Teams)
 
 ### Working Groups
@@ -109,7 +109,7 @@ Future RFCs will define how membership of the Core Working Group will change ove
 ### 1. Design
 
 Anyone can propose creating a Team or Working Group. In order to be considered, it must satisfy a number of basic conditions:
-- A _Team_ **must have at least 3 people** whose **Full Time** efforts are primarily focused on that Team's work.
+- A _Team_ **must have at least 2 people** whose **Full Time** efforts are primarily focused on that Team's work.
 - A _Working Group_ must be needed by at least 2 Teams or Working Groups.
 
 When preparing to propose a Team or Working Group, make sure to answer these questions:
@@ -148,7 +148,7 @@ Captains are responsible for:
 - Stewarding the creation of OKRs, freezing them, and getting them scored at mid-quarter and end-of-quarter.
 
 ### 5. Dissolving or Merging
-If a Team's membership drops below 3 Full Time people, it will be marked "understaffed" and must either add more people, merge with another WG, or dissolve before the next round of OKR planning.
+If a Team's membership drops below 2 Full Time people, it will be marked "understaffed" and must either add more people, merge with another WG, or dissolve before the next round of OKR planning.
 
 If a Team or WG merges with another Team/WG, the merged group:
 - Does not have to modify its landing page (can still present itself to the world as a distinct group)
@@ -195,7 +195,7 @@ Why should we *not* do this?
         - People can only captain 1 WG at a time?
         - Distinguish between product groups and WGs?
         - Work assignments should happen on Product groups
-    - Addressed: Force 3-person minimum for Teams. Part-time members don't count towards that minimum. This incentivizes teams to get their members to commit, and focus.
+    - Addressed: Force 2-person minimum for Teams. Part-time members don't count towards that minimum. This incentivizes teams to get their members to commit, and focus.
 
 
 Questions to resolve through implementation
