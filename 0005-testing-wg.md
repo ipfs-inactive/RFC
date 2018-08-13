@@ -12,9 +12,10 @@
 
 Defining and starting a Working Group that focuses on:
 
-- Realizing and implementing reusable testing strategies across projects
-- Developing and maintain tools for testing and developer productivity
+- Realizing and implementing reusable testing and development strategies across projects
+- Develop and maintain tools for testing and developer productivity
 - Create and maintain a sound testing infrastructure for projects
+- Define and help achieve Sustainable Open Source Modules
 
 # Motivation
 [motivation]: #motivation
@@ -58,7 +59,7 @@ The Working Group will do the following things:
 - Benchmarking
 - Releases
 - Developer Tools
-- OSS Productivity (missing better title for this, "sustainable modules" effort)
+- Sustainable Open Source Modules (OSS Productivity)
 - Testing Theory and Strategy
   - Standarization
   - Performance
@@ -105,6 +106,9 @@ a catch-all group for miscellaneous tasks.
 
 # Unresolved questions
 [unresolved]: #unresolved-questions
+
+- This Working Group should contain a mix of full-time and part-time contributors which
+  collides with the proposed structure here: https://github.com/ipfs/ipfs/pull/285/files#diff-ca5fe70b286df6e5e4acb856de2d7c66R43
 
 <!--
 - What parts of the design do you expect to resolve through the RFC process before this gets merged?
