@@ -1,5 +1,5 @@
 - Feature Name: ipns-over-dns
-- Start Date: 2018-09-22
+- Start Date: 2018-10-16
 - Current Status: DRAFT
 - Owner: Lars Gierth - @lgierth
 - RFC PR: (leave this empty)
@@ -31,16 +31,28 @@
   - optional: store entries to disk
   - optional: port 8080 redirect Host=qmfoo.ipns.name to ipfs.io/ipns/QmFoo
 
+ipns stack
+- dht: global, slow, stateful
+- pubsub: global, realtime, stateless
+- mdns: local, realtime, stateful
 
 # Summary
 [summary]: #summary
 
-This document proposes a new IPNS namesys based on PubSub and DNS.
-Name updates are published to a well-known PubSub topic,
-and thin resolver daemons listen to these updates.
-There are well-known highly-available global resolvers,
-and infinite other, preferrably more local, resolvers.
-Names are resolved as DNS TXT records, or via a minimal IPFS HTTP API subset.
+This document proposes a new IPNS namesys based on DNS and libp2p PubSub.
+Name updates are posted to a well-known PubSub topic,
+and thin DNS zone daemons listen to these updates.
+Name resolution requests self-certifying DNS TXT records.
+These are available in well-known highly-available global DNS zones,
+and countless other, preferrably more local, zones.
+
+Although DNS is used, this namesys doesn't inherit any of DNS's centralisms.
+Since records are self-certifying and requested by their public key's hash,
+we achieve authenticity and integrity, which would otherwise require ICANN and DNSSEC.
+
+DNS is used purely as a transport.
+Any arbitrary DNS zone can serve the records.
+Records cannot be forged.
 
 
 # Motivation
@@ -51,7 +63,6 @@ Why are we doing this? What use cases does it support? What is the expected outc
 It's intended to integrate with existing Internet infrastructure seamlessly,
 and to be fast at publishing name changes and even faster at resolving names,
 while also maintaing IPNS's distributed and resilient nature.
-
 
 
 # Guide-level explanation
@@ -99,7 +110,7 @@ ipns=<entry incl. sig and key>
 ns1.ipns.name
 ns2.ipns.name
 
-> ipfs config Namesys.DNS.Resolvers
+> ipfs config Namesys.DNS.Zones
 ["ipns.name", "ipns.local", "ipns.olsr", "cloudflare-ipns.com", "ipnsname8jh89n1c2xc12.onion"]
 
 > ipfs config Namesys.DNS.StrictTTL
